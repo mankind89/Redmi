@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.toggle-button {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 40px;
+}
+.toggle-button > input {
+    appearance: none;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid gray;
+    border-radius: 4rem;
+    transition: .4s;
+    -webkit-transition: .4s;
+    background-color: red;
+    cursor: pointer;
+    padding: 10px;
+}
+.slide::before {
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    top: 1px;
+    left: 1px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    border-radius: 50%;
+    background-color: greenyellow;
+    content: "";
+}
+input:checked+.slide {
+    background-color: lightgray;
+}
+input:checked+.slide::before {
+    -webkit-transform: translateX(22px);
+    transform: translateX(22px);
+}
+.play-btn {
+    margin-left: 40px;
+    display: inline-block;
+}
+.play-btn-inner {
+    height: 50px;
+    width: 50px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white,white), radial-gradient(circle at top left, green, brown);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+}
+.play-btn-inner .fa {
+padding: 18px 0;
+font-size: 13px;
+cursor: pointer;
+}
+small {
+    margin: auto 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #19dafa;
+    letter-spacing: 3px;
+    position: relative;
+    left: 3rem;
+    bottom: 2rem;
+}
+.quick-link {
+    background-color: red;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+.quick-link ul {
+display: inline-flex;
+margin: 30px auto;
+text-align: center;
+}
+.quick-link li {
+list-style-type: none;
+margin: 0 50px;
+cursor: pointer;
+}
+.quick-link ul li .fa {
+    font-size: 25px;
+    color: #fff;
+}
+.quick-link ul li p {
+    margin-top: 15px;
+    font-size: 10px;
+    color: #fff;
+}
+.social-icon {
+    position: absolute;
+    right: 72px;
+    bottom: 35px
+}
+.social-icon ul li {
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+}
+.social-icon ul li a {
+    color: #999;
+    border-radius: 50%;
+    border: 1px solid #999;
+    padding: 5px;
+    display: block;
+}

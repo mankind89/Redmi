@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.box {
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(49, 70, 134);
+}
+.mini-box {
+    width: 95%;
+    height: 55vh;
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    background-color: white;
+    box-shadow: 2px 2px 20px ;
+}
+.Chart ul {
+    list-style-type: none;
+    background-color: rgb(48, 92, 92);
+    display: flex;
+    justify-content: space-between;  
+}
+.Chart  li  {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+.Chart ul li:hover {
+    background-color: white;
+color: #000;
+}
+.Chart ul li a:hover {
+    background-color: white;
+    color: #000 !important;
+}
+.Chart ul li a {
+    text-decoration: none;
+    color: white;
+}
+.mini-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    position: relative;
+}
+.active {
+    background-color: red;
+}
+.middle h3 {
+    position: relative;
+    bottom: 2rem;
+    left: 5rem;
+}
+.button {
+    position: absolute;
+    left: 19.7rem;
+    top: 7rem;
+}
+.button1 {
+    position: absolute;
+    right: 12.6em;
+    bottom: -4.3em;
+}
+.span {
+    padding: 10px;
+    border-radius: 5px;
+}
+.logo {
+    position: absolute;
+    top: 10rem;
+    right: 36rem;
+}
